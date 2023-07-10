@@ -7,6 +7,9 @@
 
 [![Harlok's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ZacharyKirkeby&layout=compact&theme=nightowl)](https://github.com/anuraghazra/github-readme-stats)
 
+
+![Snake animation](https://github.com/ZacharyKirkeby/ZacharyKirkeby/blob/output/github-contribution-grid-snake.svg)
+
 <!--
 **ZacharyKirkeby/ZacharyKirkeby** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
