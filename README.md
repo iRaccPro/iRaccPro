@@ -1,7 +1,7 @@
 ### Hi there 👋
 
+<a href="#" id="myLink">[![ZacharyKirkeby's GitHub stats](https://github-readme-stats.vercel.app/api?username=ZacharyKirkeby&show_icons=true&theme=nightowl)](https://github.com/anuraghazra/github-readme-stats)</a>
 
-[![ZacharyKirkeby's GitHub stats](https://github-readme-stats.vercel.app/api?username=ZacharyKirkeby&show_icons=true&theme=nightowl)](https://github.com/anuraghazra/github-readme-stats)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ZacharyKirkeby&size_weight=0.5&count_weight=0.5&langs_count=10&layout=donut&theme=nightowl)](https://github.com/anuraghazra/github-readme-stats)
 
