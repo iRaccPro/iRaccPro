@@ -3,6 +3,9 @@
 
 [![ZacharyKirkeby's GitHub stats](https://github-readme-stats.vercel.app/api?username=ZacharyKirkeby&show_icons=true&theme=nightowl)](https://github.com/anuraghazra/github-readme-stats)
 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ZacharyKirkeby&size_weight=0.5&count_weight=0.5&langs_count=10&layout=donut)](https://github.com/anuraghazra/github-readme-stats)
+
+[![Harlok's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ZacharyKirkeby&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
 <!--
 **ZacharyKirkeby/ZacharyKirkeby** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
