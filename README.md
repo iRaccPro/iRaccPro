@@ -1,5 +1,9 @@
 ### Hi there 👋
 
+
+[![ZacharyKirkeby's GitHub stats](https://github-readme-stats.vercel.app/api?username=ZacharyKirkeby&show_icons=true&theme=nightowl)](https://github.com/anuraghazra/github-readme-stats)
+
+
 <!--
 **ZacharyKirkeby/ZacharyKirkeby** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
