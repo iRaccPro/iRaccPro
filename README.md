@@ -14,6 +14,7 @@
 </picture>
 
 
+![Snake animation](https://github.com/ZacharyKirkeby/ZacharyKirkeby/blob/output/github-contribution-grid-snake.svg)
 
 <!--
 **ZacharyKirkeby/ZacharyKirkeby** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
