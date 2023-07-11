@@ -1,11 +1,38 @@
-### Hi there 👋
+## Hi there 👋
 
-<a href="#" id="myLink">[![ZacharyKirkeby's GitHub stats](https://github-readme-stats.vercel.app/api?username=ZacharyKirkeby&show_icons=true&theme=nightowl)](https://github.com/anuraghazra/github-readme-stats)</a>
+I am Zachary Kirkeby. I am currently a Computer Science student studying at Purdue University. My studies primarily focus on cybersecuirty, particularly red team operations. 
+
+## Technologies and Tools
+![](https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=2bbc8a)
+![](https://img.shields.io/badge/OS-Windows-Informational?logo=Windows)
+![](https://img.shields.io/badge/OS-macOS-Informational?style=flat&logo=Apple)
+![](https://img.shields.io/badge/Editor-Visual%20Studio-Informational?style=flat&logo=Visual%20Studio)
+![](https://img.shields.io/badge/Editor-NeoVim-Informational?style=flat&logo=NeoVim)
+![](https://img.shields.io/badge/Editor-EclipseIDE-Informational?style=flat&logo=Eclipse%20IDE)
+![](https://img.shields.io/badge/Code-C%2B%2B-Informational?style=flat&logo=C%2B%2B)
+![](https://img.shields.io/badge/Code-Python-Informational?style=flat&logo=Python)
+![](https://img.shields.io/badge/Code-Java-Informational?style=flat&logo=oracle)
+![](https://img.shields.io/badge/Shell-Powershell-Informational?style=flat&logo=Powershell)
+![](https://img.shields.io/badge/Shell-Bash-informational?style=flat&logo=gnu-bash&logoColor=white&color=2bbc8a)
+![](https://img.shields.io/badge/Tools-Git-Informational?style=flat&logo=Git)
+![](https://img.shields.io/badge/Tools-Docker-Informational?style=flat&logo=Docker)
 
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ZacharyKirkeby&size_weight=0.5&count_weight=0.5&langs_count=10&layout=donut&theme=nightowl)](https://github.com/anuraghazra/github-readme-stats)
+[![ZacharyKirkeby's GitHub stats](https://github-readme-stats.vercel.app/api?username=ZacharyKirkeby&show_icons=true&theme=nightowl&count_private=true)]
 
-[![Harlok's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ZacharyKirkeby&layout=compact&theme=nightowl)](https://github.com/anuraghazra/github-readme-stats)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ZacharyKirkeby&size_weight=0.5&count_weight=0.5&langs_count=10&layout=donut&theme=nightowl&count_private=true)]
+
+[![Zachary's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ZacharyKirkeby&layout=compact&theme=nightowl)]
+
+
+<a href=”https://https://www.linkedin.com/in/zachary-kirkeby-777254242/"> ![alt text](https://img.shields.io/badge/-LinkedIn-0e76a8?style=plastic&logo=linkedIn)</a>
+
+https://tryhackme.com/p/iRaccPro
+https://app.hackthebox.com/profile/1401235
+
+
+
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="github-snake-dark.svg" />
@@ -16,10 +43,6 @@
 
 ![Snake animation](https://github.com/ZacharyKirkeby/ZacharyKirkeby/blob/output/github-contribution-grid-snake.svg)
 
-<!--
-**ZacharyKirkeby/ZacharyKirkeby** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
 
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
