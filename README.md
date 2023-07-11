@@ -3,7 +3,7 @@
 I am Zachary Kirkeby. I am currently a Computer Science student studying at Purdue University. My studies primarily focus on cybersecuirty, particularly red team operations. 
 
 ![tryhackme stats](https://raw.githubusercontent.com/ZacharyKirkeby/ZacharyKirkeby/master/assets/thm_propic.png)
-![HacktheBox stats](https://www.hackthebox.com/badge/image/profile/1401235)
+[![Zachs's hackthebox stats](http://www.hackthebox.eu/badge/image/1401235)]
 
 ![](https://img.shields.io/badge/TryHackMe-Informational?style=plastic&logo=TryhackMe&link=https%3A%2F%2Ftryhackme.com%2Fp%2FiRaccPro&logoColor=c792ea&labelColor=011627&color=7fdbca)
 ![](https://img.shields.io/badge/LinkedIn-Informational?style=plastic&logo=linkedIn&link=https://https://www.linkedin.com/in/zachary-kirkeby-777254242/&logoColor=c792ea&labelColor=011627&color=7fdbca)
