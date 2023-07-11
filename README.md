@@ -2,7 +2,15 @@
 
 I am Zachary Kirkeby. I am currently a Computer Science student studying at Purdue University. My studies primarily focus on cybersecuirty, particularly red team operations. 
 
-<!DOCTYPE html><html><head><style>.centered{text-align:center;color:#c792ea;}</style></head><body><div class="centered"><h1>Technologies and Tools</h1></div></body></html>
+![tryhackme stats](https://raw.githubusercontent.com/ZacharyKirkeby/ZacharyKirkeby/master/assets/thm_propic.png)
+![HacktheBox stats](https://www.hackthebox.com/badge/image/profile/1401235)
+
+![](https://img.shields.io/badge/TryHackMe-Informational?style=plastic&logo=TryhackMe&link=https%3A%2F%2Ftryhackme.com%2Fp%2FiRaccPro&logoColor=c792ea&labelColor=011627&color=7fdbca)
+![](https://img.shields.io/badge/LinkedIn-Informational?style=plastic&logo=linkedIn&link=https://https://www.linkedin.com/in/zachary-kirkeby-777254242/&logoColor=c792ea&labelColor=011627&color=7fdbca)
+![](https://img.shields.io/badge/HackTheBox-Informational?style=plastic&logo=HackTheBox&link=https://app.hackthebox.com/profile/1401235&logoColor=c792ea&labelColor=011627&color=7fdbca)
+
+
+## Technology and Tools
 
 ![](https://img.shields.io/badge/OS-Linux-informational?style=plastic&logo=linux&logoColor=c792ea&labelColor=011627&color=7fdbca)
 ![](https://img.shields.io/badge/OS-Windows-Informational?style=plastic&logo=Windows&logoColor=c792ea&labelColor=011627&color=7fdbca)
@@ -24,23 +32,6 @@ I am Zachary Kirkeby. I am currently a Computer Science student studying at Purd
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ZacharyKirkeby&size_weight=0.5&count_weight=0.5&langs_count=10&layout=donut&theme=nightowl&count_private=true)]
 
 [![Zachary's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ZacharyKirkeby&layout=compact&theme=nightowl)]
-
-
-
-![](https://img.shields.io/badge/-LinkedIn-0e76a8?style=plastic&logo=linkedIn&link=https://https://www.linkedin.com/in/zachary-kirkeby-777254242/)
-
-
-![tryhackme stats](https://raw.githubusercontent.com/ZacharyKirkeby/ZacharyKirkeby/master/assets/thm_propic.png)
-
-![](https://img.shields.io/badge/TryHackMe-Informational?style=plastic&logo=TryhackMe&link=https%3A%2F%2Ftryhackme.com%2Fp%2FiRaccPro)
-
-
-![](https://img.shields.io/badge/HackTheBox-Informational?style=plastic&logo=HackTheBox&link=https://app.hackthebox.com/profile/1401235)
-
-
-
-
-
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="github-snake-dark.svg" />
