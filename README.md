@@ -38,7 +38,6 @@ I am Zachary Kirkeby. I am currently a Computer Science student studying at Purd
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ZacharyKirkeby&size_weight=0.5&count_weight=0.5&langs_count=10&layout=donut&theme=nightowl&count_private=true)]
 
-[![Zachary's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ZacharyKirkeby&layout=compact&theme=nightowl)]
 
 
 <picture>
