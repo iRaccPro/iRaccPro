@@ -36,7 +36,7 @@ I am Zach. I am currently a Computer Science student studying at Purdue Universi
 
 [![iRacc's GitHub stats](https://github-readme-stats.vercel.app/api?username=iRaccPro&show_icons=true&theme=nightowl&count_private=true)]
 
-[![Top Langs](https://github-readme-stats-j5r9dc9kn-iraccpro.vercel.app/api/top-langs/?username=iRaccPro&layout=donut&&show_icons=true&theme=nightowl)](https://github.com/iRaccPro/github-readme-stats)
+[![Top Langs](https://github-readme-stats-j5r9dc9kn-iraccpro.vercel.app/api/top-langs/?username=iRaccPro&layout=donut&&show_icons=true&theme=nightowl&exclude_repo=github-readme-stats&langs_count=12)](https://github.com/iRaccPro/github-readme-stats)
 
 
 
