@@ -2,7 +2,7 @@
 
 I am Zach. I am currently a Computer Science student studying at Purdue University. My studies primarily focus on cybersecurity, particularly red team operations. 
 
-![tryhackme stats](https://raw.githubusercontent.com/iRaccPro/iRaccPro/master/assets/thm_propic.png)
+![tryhackme stats](https://raw.githubusercontent.com/iRaccPro/iRaccPro/master/assets/thm_propic.png)[tryhackme]
 ![Zachs's hackthebox stats](http://www.hackthebox.eu/badge/image/1401235)
 
 
@@ -10,7 +10,7 @@ I am Zach. I am currently a Computer Science student studying at Purdue Universi
 ![](https://img.shields.io/badge/LinkedIn-Informational?style=plastic&logo=linkedIn&logoColor=c792ea&labelColor=011627&color=7fdbca)
 ![](https://img.shields.io/badge/HackTheBox-Informational?style=plastic&logo=HackTheBox&link=https://app.hackthebox.com/profile/1401235&logoColor=c792ea&labelColor=011627&color=7fdbca)
 
-
+[tryhackme]: https://tryhackme.com/p/iRaccPro
 
 ## Technology and Tools
 
