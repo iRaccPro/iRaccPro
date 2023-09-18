@@ -15,4 +15,4 @@ jobs:
         with:
           # Replace with your tryhackme username
           username: iRaccPro
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${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}
