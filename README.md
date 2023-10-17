@@ -21,7 +21,6 @@ I am Zach. I am currently a Computer Science student studying at Purdue Universi
 ![](https://img.shields.io/badge/Editor-Visual%20Studio-Informational?style=plastic&logo=Visual%20Studio&logoColor=c792ea&labelColor=011627&color=7fdbca)
 ![](https://img.shields.io/badge/Editor-NeoVim-Informational?style=plastic&logo=NeoVim&logoColor=c792ea&labelColor=011627&color=7fdbca)
 ![](https://img.shields.io/badge/Editor-EclipseIDE-Informational?style=plastic&logo=Eclipse%20IDE&logoColor=c792ea&labelColor=011627&color=7fdbca)
-![](https://img.shields.io/badge/Code-C%2B%2B-Informational?style=plastic&logo=C%2B%2B&logoColor=c792ea&labelColor=011627&color=7fdbca)
 ![](https://img.shields.io/badge/Code-Python-Informational?style=plastic&logo=Python&logoColor=c792ea&labelColor=011627&color=7fdbca)
 ![](https://img.shields.io/badge/Code-Java-Informational?style=plastic&logo=oracle&logoColor=c792ea&labelColor=011627&color=7fdbca)
 ![](https://img.shields.io/badge/Shell-Powershell-Informational?style=plastic&logo=Powershell&logoColor=c792ea&labelColor=011627&color=7fdbca)
