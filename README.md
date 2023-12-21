@@ -2,7 +2,7 @@
 
 I am Zach. I am a student at Purdue University studying computer science, specifically systems and security. My interests primarily focus on cybersecurity, particularly red team operations within industrial control systems and low level systems
 
-[![zachs's tryhackme stats](https://raw.githubusercontent.com/iRaccPro/iRaccPro/main/assets/thm_propic.png)][tryhackme]
+[![zachs's tryhackme stats](https://raw.githubusercontent.com/ZacharyKirkeby/ZacharyKirkeby/main/assets/thm_propic.png)][tryhackme]
 ![Zachs's hackthebox stats](http://www.hackthebox.eu/badge/image/1401235)
 
 
@@ -32,9 +32,9 @@ I am Zach. I am a student at Purdue University studying computer science, specif
 
 ## My Github Stats
 
-[![iRacc's GitHub stats](https://github-readme-stats.vercel.app/api?username=iRaccPro&show_icons=true&theme=nightowl&count_private=true)]
+[![iRacc's GitHub stats](https://github-readme-stats.vercel.app/api?username=ZacharyKirkeby&show_icons=true&theme=nightowl&count_private=true)]
 
-[![Top Langs](https://github-readme-stats-j5r9dc9kn-iraccpro.vercel.app/api/top-langs/?username=iRaccPro&layout=donut&&show_icons=true&theme=nightowl&exclude_repo=github-readme-stats&langs_count=12)](https://github.com/iRaccPro/github-readme-stats)
+[![Top Langs](https://github-readme-stats-j5r9dc9kn-iraccpro.vercel.app/api/top-langs/?username=ZacharyKirkeby&layout=donut&&show_icons=true&theme=nightowl&exclude_repo=github-readme-stats&langs_count=12)](https://github.com/ZacharyKirkeby/github-readme-stats)
 
 
 
