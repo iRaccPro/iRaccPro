@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://tryhackme.com/p/iRaccPro -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TryHackMe | iRaccPro</title>
+<meta name="description" content="TryHackMe is a free online platform for learning cyber security, using hands-on exercises and labs, all through your browser!">
+<meta name="og:description" content="TryHackMe is a free online platform for learning cyber security, using hands-on exercises and labs, all through your browser!">
+<meta name="keywords" content="cyber,security,cyber security,cyber security training,coding,computer,bitcoin,hacking,hackers,hacks,hack,exploits,keylogger,learn,poc">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<meta property="og:site_name" content="TryHackMe">
+<meta property="og:title" content="TryHackMe | iRaccPro">
+<meta property="og:image" content="https://secure.gravatar.com/avatar/8c3ef80f364b457377a01e4607dbd8cf.jpg?s=200&amp;d=robohash&amp;r=x">
+<meta property="og:url" content="https://tryhackme.com/p/iRaccPro">
+<meta name="twitter:image" content="https://tryhackme.com/img/meta/default.png">
+<meta property="og:description" content="An online platform for learning and teaching cyber security, all through your browser.">
+
+<script type="text/javascript" async="" src="./TryHackMe _ iRaccPro_files/pgpbhph6"></script><script async="" src="./TryHackMe _ iRaccPro_files/gtm.js.download"></script><script type="text/javascript" integrity="sha384-sBFQqoO3bx3qM8f+iksNzu/E3v0rdkVlvzRqpvP+ynsUk/uaCIsa+NPjw5N04mpg" crossorigin="anonymous" async="" src="./TryHackMe _ iRaccPro_files/analytics-browser-2.3.3-min.js.gz"></script><script src="./TryHackMe _ iRaccPro_files/jquery.min.js.download"></script>
+<script src="./TryHackMe _ iRaccPro_files/popper.min.js.download"></script>
+<script>
+    const userExists = "true";
+
+    window.optimizely = window.optimizely || [];
+    window.optimizely.push({
+      type: 'user',
+      attributes: {
+        is_logged_in: userExists === 'true'
+      }
+    })
+  </script>
+<script src="./TryHackMe _ iRaccPro_files/24671560256.js.download"></script>
+<link rel="stylesheet" href="./TryHackMe _ iRaccPro_files/boostrap431.min.css">
+<script src="./TryHackMe _ iRaccPro_files/bootstrap431.min.js.download"></script>
+<link rel="stylesheet" href="./TryHackMe _ iRaccPro_files/animate.min.css">
+<link rel="stylesheet" href="./TryHackMe _ iRaccPro_files/all.css" integrity="sha384-ekOryaXPbeCpWQNxMwSWVvQ0+1VrStoPJq54shlYhR8HzQgig1v5fas6YgOqLoKz" crossorigin="anonymous">
+<link rel="icon" type="image/png" href="https://assets.tryhackme.com/img/favicon.png">
+<link rel="stylesheet" media="screen" href="./TryHackMe _ iRaccPro_files/general-style.css">
+<script src="./TryHackMe _ iRaccPro_files/script.js.download"></script>
+<script src="./TryHackMe _ iRaccPro_files/validation.js.download"></script>
+<script type="text/javascript">
+    !function(){"use strict";!function(e,t){var r=e.amplitude||{_q:[],_iq:{}};if(r.invoked)e.console&&console.error&&console.error("Amplitude snippet has been loaded.");else{var n=function(e,t){e.prototype[t]=function(){return this._q.push({name:t,args:Array.prototype.slice.call(arguments,0)}),this}},s=function(e,t,r){return function(n){e._q.push({name:t,args:Array.prototype.slice.call(r,0),resolve:n})}},o=function(e,t,r){e._q.push({name:t,args:Array.prototype.slice.call(r,0)})},i=function(e,t,r){e[t]=function(){if(r)return{promise:new Promise(s(e,t,Array.prototype.slice.call(arguments)))};o(e,t,Array.prototype.slice.call(arguments))}},a=function(e){for(var t=0;t<g.length;t++)i(e,g[t],!1);for(var r=0;r<m.length;r++)i(e,m[r],!0)};r.invoked=!0;var c=t.createElement("script");c.type="text/javascript",c.integrity="sha384-sBFQqoO3bx3qM8f+iksNzu/E3v0rdkVlvzRqpvP+ynsUk/uaCIsa+NPjw5N04mpg",c.crossOrigin="anonymous",c.async=!0,c.src="https://cdn.amplitude.com/libs/analytics-browser-2.3.3-min.js.gz",c.onload=function(){e.amplitude.runQueuedFunctions||console.log("[Amplitude] Error: could not load SDK")};var u=t.getElementsByTagName("script")[0];u.parentNode.insertBefore(c,u);for(var l=function(){return this._q=[],this},p=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove","getUserProperties"],d=0;d<p.length;d++)n(l,p[d]);r.Identify=l;for(var v=function(){return this._q=[],this},f=["getEventProperties","setProductId","setQuantity","setPrice","setRevenue","setRevenueType","setEventProperties"],y=0;y<f.length;y++)n(v,f[y]);r.Revenue=v;var g=["getDeviceId","setDeviceId","getSessionId","setSessionId","getUserId","setUserId","setOptOut","setTransport","reset","extendSession"],m=["init","add","remove","track","logEvent","identify","groupIdentify","setGroup","revenue","flush"];a(r),r.createInstance=function(e){return r._iq[e]={_q:[]},a(r._iq[e]),r._iq[e]},e.amplitude=r}}(window,document)}();
+    
+    amplitude.init("d09a34bd2da2173645f4671e8b72dc11", { defaultTracking: false });
+  </script>
+<script src="./TryHackMe _ iRaccPro_files/experiment.umd.js.download"></script>
+<script type="module">
+      window.experiment = Experiment.Experiment.initializeWithAmplitudeAnalytics("client-KsETFcRbQMN9hDMtAaA0aSSgCasMxJkv", {
+        automaticExposureTracking: true,
+        fetchOnStart: true
+      });
+      await window.experiment.start({
+        user_id: "63c0368133c7f600551baa19",
+      })
+    </script>
+<script>
+    paceOptions = {
+      ajax: false, // disabled
+      document: true, // enabled
+      eventLag: true, // disabled
+    }
+  </script>
+<script src="./TryHackMe _ iRaccPro_files/pace.js.download"></script>
+<link href="./TryHackMe _ iRaccPro_files/pace-theme-flash.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="./TryHackMe _ iRaccPro_files/cookieconsent.min.css">
+<script src="./TryHackMe _ iRaccPro_files/cookieconsent.min.js.download"></script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WPFM5LPL');</script>
+
+
+<script>
+    window.intercomSettings = {
+      api_base: "https://api-iam.intercom.io",
+      app_id: "pgpbhph6"
+    };
+  </script>
+<script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 1950941, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script><script async="" src="./TryHackMe _ iRaccPro_files/hotjar-1950941.js.download"></script>
+<script>
+    /* Global javascript variables */
+
+    // Used inside script.js for createRooms compelted users.
+    const username = 'iRaccPro'
+    const subscribed = '0'
+    const level = '9'
+    const intercomEnabled = 'true'
+  </script>
+<script>
+    //add back tracking info
+    const userId = "63c0368133c7f600551baa19"
+    let tutorialComplete = false
+    if ('false' == "true") {
+      tutorialComplete = true
+    }
+    if(intercomEnabled === "true"){
+      window.intercomSettings = {
+        api_base: "https://api-iam.intercom.io",
+        app_id: "pgpbhph6",
+        user_id: userId,
+        username: username,
+        email: "zakirkeby@gmail.com",
+        created_at: Math.floor(new Date("Thu Jan 12 2023 16:34:09 GMT+0000 (Greenwich Mean Time)").getTime() / 1000), // Signup date as a Unix timestamp
+        user_hash: '66adbf0a5207839d0330ac7438d27a897c79e7003c834c6f7f83dec67d4a0df6'
+      };
+    }
+    window.hj('identify', userId, {
+      displayName: username,
+      subscribed: "0",
+      dateSignUp: "Thu Jan 12 2023 16:34:09 GMT+0000 (Greenwich Mean Time)",
+      experience: "early-intermediate"
+    })
+  </script>
+<script type="application/ld+json">
+
+   {
+      "@context":"https://schema.org",
+      "@type":"Organization",
+      "url":"https://tryhackme.com",
+      "name":"TryHackMe",
+      "logo":"https://tryhackme.com/img/favicon.png",
+      "description":"TryHackMe is a free online platform for learning cyber security, using hands-on exercises and labs, all through your browser!",
+      "email": "support@tryhackme.com",
+      "sameAs":[
+         "https://www.linkedin.com/company/tryhackme",
+         "https://twitter.com/realtryhackme"
+      ]
+   }
+
+</script>
+<script>
+    console.log(`%c
+      ------------------
+      < Happy Hacking! >
+      ------------------
+              \\   ^__^
+               \\  (oo)\\_______
+                  (__)\\       )\\/\\
+                      ||----w |
+                      ||     ||`, "font-family:monospace")
+  </script>
+<script>
+  (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/pgpbhph6';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
+</head>
+<body class="pace-done modal-open" style="padding-right: 8px;"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+
+<nav class="navbar navbar-expand-md navbar-dark navbar-color-loggedin navbar-main">
+<div class="container">
+<button id="thm-mobile-nav-open" class="thm-nav__hamburger-btn" data-target="#thm-mobile-nav-menu" aria-controls="thm-mobile-nav-menu" aria-expanded="false" aria-label="Open mobile navigation">
+<span class="thm-nav__hamburger-lines"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+<div class="navbar-brand" href="/">
+<a href="https://tryhackme.com/dashboard">
+<img width="115px" src="./TryHackMe _ iRaccPro_files/tryhackme_logo_full.svg" alt="TryHackMe" class="logo">
+</a>
+</div>
+<ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-pagelinks">
+<li class="nav-item ">
+<a class="nav-link" href="https://tryhackme.com/dashboard">
+<i class="navbar-item-icon far fa-browser"></i>
+<div class="navbar-item-text">Dashboard</div>
+</a>
+</li>
+<li class="nav-item  dropdown lite-removable" id="nav-learn">
+<a id="nav-other" class="nav-link" href="https://tryhackme.com/p/iRaccPro#" data-toggle="dropdown">
+<i class="navbar-item-icon far fa-book-open"></i>
+<div class="navbar-item-text">Learn</div>
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item d-flex vertical-align-custom" href="https://tryhackme.com/hacktivities">
+<div class="dropdown-menu-icon">
+<i class="fas fa-book-open"></i>
+</div>
+<div class="dropdown-menu-desc">
+<span class="mb-0">Learn</span>
+<div class="text-lgray size-12">Hands-on Hacking</div>
+</div>
+</a>
+<a class="dropdown-item d-flex vertical-align-custom" href="https://tryhackme.com/hacktivities?tab=practice">
+<div class="dropdown-menu-icon">
+<i class="fas fa-bullseye-arrow"></i>
+</div>
+<div class="dropdown-menu-desc">
+<span class="mb-0">Practice</span>
+<div class="text-lgray size-12">Reinforce your learning</div>
+</div>
+</a>
+<a class="dropdown-item d-flex vertical-align-custom" href="https://tryhackme.com/hacktivities?tab=search&amp;page=1&amp;free=all&amp;order=most-popular&amp;difficulty=all&amp;type=all">
+<div class="dropdown-menu-icon">
+<i class="fas fa-search"></i>
+</div>
+<div class="dropdown-menu-desc">
+<span class="mb-0">Search</span>
+<div class="text-lgray size-12">Explore over 700 rooms</div>
+</div>
+</a>
+</div>
+</li>
+<li class="nav-item  dropdown lite-removable">
+<a id="nav-other" class="nav-link" href="https://tryhackme.com/p/iRaccPro#" data-toggle="dropdown">
+<i class="navbar-item-icon far fa-trophy"></i>
+<div class="navbar-item-text">Compete</div>
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown" id="compete">
+<a class="dropdown-item d-flex vertical-align-custom" href="https://tryhackme.com/leaderboards">
+<div class="dropdown-menu-icon">
+<i class="fas fa-trophy"></i>
+</div>
+<div class="dropdown-menu-desc">
+<span class="mb-0">Leaderboards</span>
+<div class="text-lgray size-12">Platform Rankings</div>
+</div>
+</a>
+<a class="dropdown-item d-flex vertical-align-custom" href="https://tryhackme.com/games/koth">
+<div class="dropdown-menu-icon">
+<i class="fas fa-crown"></i>
+</div>
+<div class="dropdown-menu-desc">
+<span class="mb-0">King of the Hill</span>
+<div class="text-lgray size-12">Attack &amp; Defend</div>
+</div>
+</a>
+<a class="dropdown-item d-flex vertical-align-custom" href="https://tryhackme.com/workspace">
+<div class="dropdown-menu-icon">
+<i class="fas fa-user-friends"></i>
+</div>
+<div class="dropdown-menu-desc">
+<span class="mb-0">Workspace</span>
+<div class="text-lgray size-12">Compete &amp; Collaborate</div>
+</div>
+</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a data-cy="nav-other-menu-button" id="nav-other" class="nav-link" href="https://tryhackme.com/p/iRaccPro#" data-toggle="dropdown">
+<i class="navbar-item-icon far fa-ellipsis-h-alt"></i>
+<div class="navbar-item-text">Other</div>
+</a>
+<div data-cy="nav-other-menu" class="dropdown-menu dropdown-menu-center large-dropdown" aria-labelledby="navbarDropdown">
+<span class="dropdown-menu-arrow"></span>
+<a class="dropdown-item" href="https://tryhackme.com/resources">Resources</a>
+<a class="dropdown-item" href="https://tryhackme.com/subscriptions">Buy Vouchers</a>
+<a class="dropdown-item" href="https://tryhackme.com/develop-rooms">Develop Rooms</a>
+<a class="dropdown-item" href="https://tryhackme.com/business">For Business</a>
+<a class="dropdown-item" href="https://tryhackme.com/classrooms">For Education</a>
+<a class="dropdown-item" target="_blank" href="https://store.tryhackme.com/">Swag Shop</a>
+<a class="dropdown-item" href="https://tryhackme.com/glossary">Glossary</a>
+</div>
+</li>
+</ul>
+<ul class="navbar-nav navbar-right options vertical-align-custom">
+<li class="nav-item">
+<a class="nav-link " href="https://tryhackme.com/hacktivities?tab=search"> <i class="far fa-search"></i></a>
+</li>
+<li class="nav-item dropdown" id="notification-navitem">
+<a class="nav-link vertical-align-custom size-22 pl-0" href="https://tryhackme.com/p/iRaccPro#" id="notification-btn" role="button" data-toggle="dropdown">
+<i id="notification-icon" class="fal fa-bell"></i>
+<div id="notification-dot"></div>
+</a>
+<div id="nav-notification" class="dropdown-menu dropdown-menu-right">
+<div id="notification-header">Notifications</div>
+<div id="nav-notifications">
+<div class="text-center mt-2 mb-2"><i>Loading..</i></div>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a href="https://tryhackme.com/why-subscribe" class="go-premium btn btn-hgreen-soft">Go Premium</a>
+</li>
+<li class="nav-item">
+<div class="nav-item-streak text-center">
+<span id="streak-popover" class="size-24" data-container="body" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="bottom" data-content="&lt;p class=&#39;mb-2&#39;&gt;Complete a question every day to build your hacking streak, earn badges and streak freezes!&lt;/p&gt;
+
+&lt;div class=&#39;size-12 faded&#39;&gt;
+  &lt;p class=&#39;streak-points&#39;&gt;&lt;span class=&#39;streak-count&#39;&gt;7&lt;/span&gt; &lt;i class=&#39;fas fa-fire-alt hacker-green&#39;&gt;&lt;/i&gt; = Badge,
+    Access to networks, Streak freeze&lt;/p&gt;
+  &lt;p class=&#39;streak-points&#39;&gt;&lt;span class=&#39;streak-count&#39;&gt;30&lt;/span&gt; &lt;i class=&#39;fas fa-fire-alt hacker-green&#39;&gt;&lt;/i&gt; = Badge,
+    Streak freeze&lt;/p&gt;
+  &lt;p class=&#39;m-0&#39;&gt;&lt;span class=&#39;streak-count&#39;&gt;45&lt;/span&gt; &lt;i class=&#39;fas fa-fire-alt hacker-green&#39;&gt;&lt;/i&gt; = 5% off swag&lt;/p&gt;
+&lt;/div&gt;
+ &lt;div class=&#39;size-12 text-center faded mt-2 font-italic&#39;&gt;1 
+        day streak freeze equipped&lt;/div&gt;" data-original-title="" title="">
+<span id="user-streak" data-streak="22" class="hacker-green">22 <i class="fas fa-fire-alt"></i></span>
+</span>
+<script>
+                            let usersStreak = { // Global variable, used in rooms logic
+                                streakFirstAnswered: new Date('Fri Dec 01 2023 14:37:08 GMT+0000 (Greenwich Mean Time)'),
+                                streakLastAnswered: new Date('Sat Dec 23 2023 00:42:29 GMT+0000 (Greenwich Mean Time)'),
+                                usersTimezone: 'America/Chicago',
+                                streakFreeze: 1
+                            };
+                            setSidebarStreaks(usersStreak.streakFirstAnswered, usersStreak.streakLastAnswered, usersStreak.usersTimezone, usersStreak.streakFreeze)
+                        </script>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle remove-arrow p-0" href="https://tryhackme.com/p/iRaccPro#" id="navbarAvatarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="./TryHackMe _ iRaccPro_files/8c3ef80f364b457377a01e4607dbd8cf.jpg" onerror="setBrokenTmpPP(this)" class="rounded-circle navbar-user-avatar">
+</a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarAvatarDropdown">
+<a class="dropdown-item" href="https://tryhackme.com/manage-account">Profile</a>
+<a class="dropdown-item" href="https://tryhackme.com/referrals">Refer a friend</a>
+<a class="dropdown-item" href="https://tryhackme.com/badges">Badges</a>
+<a class="dropdown-item" href="https://tryhackme.com/rooms">My Rooms</a>
+<a class="dropdown-item" href="https://tryhackme.com/access">Access</a>
+<a class="dropdown-item" href="https://tryhackme.com/feedback">Give Feedback</a>
+<a class="dropdown-item" href="https://tryhackme.com/logout">Logout</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<link rel="stylesheet" href="./TryHackMe _ iRaccPro_files/streak-freeze.css">
+<div class="modal fade modal-streak-freeze" id="unlocked-streak-freeze" role="dialog">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<button type="button" class="close close-streak" id="close-streak-freeze-popup" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+<div class="modal-body">
+<figure>
+<img class="img-streak" width="400px" alt="streak freeze unlocked" src="./TryHackMe _ iRaccPro_files/streak-freeze.svg">
+</figure>
+<h2>You've unlocked a streak freeze!</h2>
+<p>With these one-time streak freezes, you can miss one day of hacking without losing your streak.</p>
+</div>
+</div>
+</div>
+</div>
+<script src="./TryHackMe _ iRaccPro_files/streak-freeze.js.download"></script>
+<nav id="thm-mobile-nav-menu" class="thm-mobile-nav" aria-label="Mobile secondary navigation menu.">
+<header>
+<a href="https://tryhackme.com/" aria-label="Go to the home page">
+<img width="140" src="./TryHackMe _ iRaccPro_files/tryhackme_logo_full.svg" alt="TryHackMe" class="logo">
+</a>
+<button id="thm-mobile-nav-close" data-target="#thm-mobile-nav-menu" aria-controls="thm-mobile-nav-menu" aria-expanded="false" aria-label="Close mobile navigation">
+<i class="fal fa-times"></i>
+</button>
+</header>
+<ul class="thm-mobile-nav-items mb-0">
+<li class="nav-item ">
+<a class="nav-link" href="https://tryhackme.com/dashboard">
+<i class="nav-title-icon far fa-browser"></i>
+<div class="nav-title">Dashboard</div>
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="https://tryhackme.com/hacktivities">
+<i class="nav-title-icon far fa-book-open"></i>
+<div class="nav-title">Learn</div>
+</a>
+</li>
+<li class="nav-item ">
+<a aria-expanded="false" aria-controls="mobile-nav-compete" aria-label="Toggle Compete menu" data-dropdownid="mobile-nav-compete" class="sublinks-toggle nav-link">
+<i class="nav-title-icon far fa-trophy"></i>
+<div class="nav-title">Compete</div>
+<i class="far fa-angle-down"></i>
+</a>
+<div id="mobile-nav-compete" class="dropdown-wrapper">
+<a href="https://tryhackme.com/leaderboards">
+<div>
+<i class="fas fa-trophy"></i>
+</div>
+<div>
+<span class="mb-0">Leaderboards</span>
+<div class="text-lgray size-12">Platform Rankings</div>
+</div>
+</a>
+<a href="https://tryhackme.com/games/koth">
+<div>
+<i class="fas fa-crown"></i>
+</div>
+<div>
+<span class="mb-0">King of the Hill</span>
+<div class="text-lgray size-12">Attack &amp; Defend</div>
+</div>
+</a>
+<a href="https://tryhackme.com/workspace">
+<div>
+<i class="fas fa-user-friends"></i>
+</div>
+<div>
+<span class="mb-0">Workspace</span>
+<div class="text-lgray size-12">Compete &amp; Collaborate</div>
+</div>
+</a>
+</div>
+</li>
+<li class="nav-item">
+<a aria-expanded="false" aria-controls="mobile-nav-other" aria-label="Toggle Compete menu" data-dropdownid="mobile-nav-other" class="sublinks-toggle nav-link">
+<i class="nav-title-icon far fa-ellipsis-h-alt"></i>
+<div class="nav-title">Other</div>
+<i class="far fa-angle-down"></i>
+</a>
+<div id="mobile-nav-other" class="dropdown-wrapper">
+<a href="https://tryhackme.com/resources">Resources</a>
+<a href="https://tryhackme.com/subscriptions">Buy Vouchers</a>
+<a href="https://tryhackme.com/develop-rooms">Develop Rooms</a>
+<a href="https://tryhackme.com/business">For Business</a>
+<a href="https://tryhackme.com/classrooms">For Education</a>
+<a target="_blank" href="https://store.tryhackme.com/">Swag Shop</a>
+</div>
+</li>
+<li class="nav-item text-center">
+<a class="nav-link size-22 d-inline-block" href="https://tryhackme.com/hacktivities?tab=search"> <i class="far fa-search"></i></a>
+</li>
+<li class="nav-item text-center">
+<a class="nav-link size-22 d-inline-block" href="https://tryhackme.com/p/iRaccPro#" id="mobile-notification-btn" role="button" data-toggle="dropdown">
+<i id="mobile-notification-icon" class="fal fa-bell"></i>
+<div id="mobile-notification-dot"></div>
+</a>
+<div id="mobile-nav-notification" class="dropdown-menu dropdown-menu-right">
+<div id="mobile-notification-header">Notifications</div>
+<div id="mobile-nav-notifications">
+<div class="text-center mt-2 mb-2"><i>Loading..</i></div>
+</div>
+</div>
+</li>
+<li class="nav-item text-center">
+<a href="https://tryhackme.com/why-subscribe"><button type="button" class="btn btn-hgreen-soft">Go Premium</button></a>
+</li>
+<li class="nav-item text-center">
+<div class="nav-item-streak">
+<span id="mobile-streak-popover" class="size-24" data-container="body" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="bottom" data-content="&lt;p class=&#39;mb-2&#39;&gt;Complete a question every day to build your hacking streak, earn badges and streak freezes!&lt;/p&gt;
+
+&lt;div class=&#39;size-12 faded&#39;&gt;
+  &lt;p class=&#39;streak-points&#39;&gt;&lt;span class=&#39;streak-count&#39;&gt;7&lt;/span&gt; &lt;i class=&#39;fas fa-fire-alt hacker-green&#39;&gt;&lt;/i&gt; = Badge,
+    Access to networks, Streak freeze&lt;/p&gt;
+  &lt;p class=&#39;streak-points&#39;&gt;&lt;span class=&#39;streak-count&#39;&gt;30&lt;/span&gt; &lt;i class=&#39;fas fa-fire-alt hacker-green&#39;&gt;&lt;/i&gt; = Badge,
+    Streak freeze&lt;/p&gt;
+  &lt;p class=&#39;m-0&#39;&gt;&lt;span class=&#39;streak-count&#39;&gt;45&lt;/span&gt; &lt;i class=&#39;fas fa-fire-alt hacker-green&#39;&gt;&lt;/i&gt; = 5% off swag&lt;/p&gt;
+&lt;/div&gt;
+ &lt;div class=&#39;size-12 text-center faded mt-2 font-italic&#39;&gt;1 
+        day streak freeze equipped&lt;/div&gt;" data-original-title="" title="">
+<span id="mobile-user-streak" data-streak="22" class="hacker-green">22 <i class="fas fa-fire-alt"></i></span>
+</span>
+</div>
+</li>
+<li class="nav-item text-center">
+<a aria-expanded="false" aria-controls="mobile-nav-auth" aria-label="Toggle Compete menu" data-dropdownid="mobile-nav-auth" class="sublinks-toggle nav-link d-inline-block">
+<img src="./TryHackMe _ iRaccPro_files/8c3ef80f364b457377a01e4607dbd8cf.jpg" onerror="setBrokenTmpPP(this)" class="rounded-circle navbar-user-avatar">
+</a>
+<div id="mobile-nav-auth" class="dropdown-wrapper">
+<a href="https://tryhackme.com/manage-account">Profile</a>
+<a href="https://tryhackme.com/referrals">Refer a friend</a>
+<a href="https://tryhackme.com/badges">Badges</a>
+<a href="https://tryhackme.com/rooms">My Rooms</a>
+<a href="https://tryhackme.com/access">Access</a>
+<a href="https://tryhackme.com/feedback">Give Feedback</a>
+<a href="https://tryhackme.com/logout">Logout</a>
+</div>
+</li>
+</ul>
+</nav>
+<script defer="" src="./TryHackMe _ iRaccPro_files/mobile-nav.js.download"></script>
+<script>
+  const ctfBuilderEnabled = true;
+  const isAdmin = false;
+  const isB2BUser = false;
+
+  if (ctfBuilderEnabled && (isB2BUser || isAdmin)) {
+    const anchor = `
+      <a class="dropdown-item d-flex vertical-align-custom" href="/r/ctf-builder">
+        <div class='dropdown-menu-icon'>
+          <i class="fas fa-flag"></i>
+        </div>
+        <div class='dropdown-menu-desc'>
+          <span class='mb-0'>CTF Builder</span>
+          <div class='text-lgray size-12'>Create your own CTF</div>
+        </div>
+      </a>`;
+    document.querySelector('#compete').insertAdjacentHTML('beforeend', anchor);
+  }
+
+  const userSignedUpLessThanSevenDaysAgo = Math.floor(
+    (new Date() - new Date('Thu Jan 12 2023 16:34:09 GMT+0000 (Greenwich Mean Time)')) / (1000 * 60 * 60 * 24) < 7
+  );
+
+  const userHasFirst4RoomsBadge = !!``;
+  const isBeginner = `early-intermediate` === 'complete-beginner';
+</script>
+<script src="./TryHackMe _ iRaccPro_files/notifications.js.download"></script>
+<script src="./TryHackMe _ iRaccPro_files/streak-freeze(1).js.download"></script><iframe src="./TryHackMe _ iRaccPro_files/a24671560256.html" hidden="" tabindex="-1" title="Optimizely Internal Frame" height="0" width="0" style="display: none;" dr94fk4pc=""></iframe>
+<link rel="stylesheet" href="./TryHackMe _ iRaccPro_files/calendarHeatmap.css">
+<script src="./TryHackMe _ iRaccPro_files/calendarHeatmap.js.download"></script>
+<script src="./TryHackMe _ iRaccPro_files/heatmapBlocks.js.download"></script>
+<link rel="stylesheet" href="./TryHackMe _ iRaccPro_files/user_profile.css">
+<link rel="stylesheet" href="./TryHackMe _ iRaccPro_files/tickets.css">
+<div id="profile-banner" style="background-color: rgb(44, 90, 118);">
+<div class="pt-4 pb-4 text-center d-flex align-items-center">
+<div class="profile-block">
+<img id="profile-picture" src="./TryHackMe _ iRaccPro_files/8c3ef80f364b457377a01e4607dbd8cf.jpg">
+</div>
+</div>
+<div class="container p-0">
+<div class="profile-stat-bar">
+<div class="p-2 text-center d-flex justify-content-around">
+<div class="profile-stat">
+<div class="size-30 bold" id="user-rank">34851</div>
+<div id="profile-rank-badge">In the top 4%</div>
+<div class="size-16 faded">Rank</div>
+</div>
+<div class="profile-stat">
+<div class="size-30 bold" id="rooms-completed">83</div>
+<div class="size-16 faded">Rooms Complete</div>
+</div>
+<div class="profile-stat">
+<div class="size-30 bold">9</div>
+<div class="size-16 faded">Level</div>
+</div>
+<div class="profile-stat">
+<div class="size-30 bold" id="badge-count">9</div>
+<div class="size-16 faded">Badges</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container profile-body">
+<div class="p-3">
+<div class="float-right">
+<img src="./TryHackMe _ iRaccPro_files/blank.gif" class="flag flag-us" data-flagcode="us" data-toggle="tooltip" data-placement="right" id="flag" title="" data-original-title="United States">
+</div>
+<h2><span class="level level-9">iRaccPro</span></h2>
+<div class="mt-3">
+<button type="button" class="btn btn-outline-success " data-toggle="modal" data-target="#publicBadge">
+Get Profile Badge ID
+</button>
+<button type="button" class="btn btn-outline-success" onclick="populateAchieveShareDropdown()" data-toggle="modal" data-target="#shareBadges">
+Share Room Badges
+</button>
+</div>
+</div>
+<div class="">
+<ul class="nav nav-tabs profile-tabs" id="myTab" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="https://tryhackme.com/p/iRaccPro#rooms-complete" role="tab">Rooms Complete</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://tryhackme.com/p/iRaccPro#badges-achieved" data-toggle="tab" role="tab">Badges</a>
+</li>
+<li class="nav-item" onclick="populateCreatedRooms()">
+<a class="nav-link" href="https://tryhackme.com/p/iRaccPro#created" data-toggle="tab" role="tab">Created Rooms</a>
+</li>
+<li class="nav-item" onclick="getActivityEvents()">
+<a class="nav-link" href="https://tryhackme.com/p/iRaccPro#yearly-activity" data-toggle="tab" role="tab">Yearly Activity</a>
+</li>
+<li class="nav-item" onclick="renderUserTickets()">
+<a class="nav-link" href="https://tryhackme.com/p/iRaccPro#tickets" data-toggle="tab" role="tab">Tickets</a>
+</li>
+</ul>
+<div class="p-3 tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="rooms-complete" role="tabpanel">
+<div class="row vertical-align-custom mb mt" id="completed-rooms">
+    <a href="https://tryhackme.com/room/introwebapplicationsecurity" class="clear-link room-card-design-1" style="background: linear-gradient(rgba(22, 27, 37, 0.8), rgba(22, 27, 37, 0.8)), url(https://assets.tryhackme.com/room-banners/intro-to-offensive-security.png)">
+      <img class="room-card-design-img" src="./TryHackMe _ iRaccPro_files/3a11e1490ae19b35d1eefa00a32bdb1a.png">
+      <div class="room-card-design-text">
+          <div class="room-card-design-title">Web Application Security</div>
+          <div class="room-card-design-desc faded">Learn about web applications and explore some of their common security issues.</div>  
+      </div>
+    </a>
+    <a href="https://tryhackme.com/room/introtooffensivesecurity" class="clear-link room-card-design-1" style="background: linear-gradient(rgba(22, 27, 37, 0.8), rgba(22, 27, 37, 0.8)), url(https://assets.tryhackme.com/room-banners/intro-to-offensive-security.png)">
+      <img class="room-card-design-img" src="./TryHackMe _ iRaccPro_files/f9dbbfc2dadce39c2ce9a592a0389d38.png">
+      <div class="room-card-design-text">
+          <div class="room-card-design-title">Intro to Offensive Security</div>
+          <div class="room-card-design-desc faded">Hack your first website (legally in a safe environment) and experience an ethical hacker's job.</div>  
+      </div>
+    </a>
+    <a href="https://tryhackme.com/room/redteamfundamentals" class="clear-link room-card-design-1" style="background: linear-gradient(rgba(22, 27, 37, 0.8), rgba(22, 27, 37, 0.8)), url(https://tryhackme-images.s3.amazonaws.com/user-uploads/5e73cca6ec4fcf1309f2df86/room-content/6cb23ff9b40ce86c6b61c485e66621bb.png)">
+      <img class="room-card-design-img" src="./TryHackMe _ iRaccPro_files/14e8664f9484e23a142aa36baf4297be.png">
+      <div class="room-card-design-text">
+          <div class="room-card-design-title">Red Team Fundamentals</div>
+          <div class="room-card-design-desc faded">Learn about the basics of a red engagement, the main components and stakeholders involved, and how red teaming differs from other cyber security engagements.</div>  
+      </div>
+    </a>
+    <a href="https://tryhackme.com/room/beginnerpathintro" class="clear-link room-card-design-1" style="background: linear-gradient(rgba(22, 27, 37, 0.8), rgba(22, 27, 37, 0.8)), url(https://tryhackme.com/img/banners/default_tryhackme.png)">
+      <img class="room-card-design-img" src="./TryHackMe _ iRaccPro_files/1616670bad7fd5b1b335edb119adae92.png">
+      <div class="room-card-design-text">
+          <div class="room-card-design-title">Learning Cyber Security</div>
+          <div class="room-card-design-desc faded">Get a short introduction to a few of the security topics you'll be learning about.</div>  
+      </div>
+    </a>
+    <a href="https://tryhackme.com/room/linuxfundamentalspart1" class="clear-link room-card-design-1" style="background: linear-gradient(rgba(22, 27, 37, 0.8), rgba(22, 27, 37, 0.8)), url(https://tryhackme-images.s3.amazonaws.com/user-uploads/61add44b3c6be8004802cc37/room-content/184dc7fb5b1d816f4005d59f36a0e484.svg)">
+      <img class="room-card-design-img" src="./TryHackMe _ iRaccPro_files/2fdf9a0c452d70d070b9f9f9914fba2f.png">
+      <div class="room-card-design-text">
+          <div class="room-card-design-title">Linux Fundamentals Part 1</div>
+          <div class="room-card-design-desc faded">Embark on the journey of learning the fundamentals of Linux.  Learn to run some of the first essential commands on an interactive terminal.</div>  
+      </div>
+    </a>
+    <a href="https://tryhackme.com/room/furthernmap" class="clear-link room-card-design-1" style="background: linear-gradient(rgba(22, 27, 37, 0.8), rgba(22, 27, 37, 0.8)), url(https://assets.tryhackme.com/room-banners/nmap.png)">
+      <img class="room-card-design-img" src="./TryHackMe _ iRaccPro_files/5d653d7a4e8a1a6d98379168cfc30ac0.png">
+      <div class="room-card-design-text">
+          <div class="room-card-design-title">Nmap</div>
+          <div class="room-card-design-desc faded">An in depth look at scanning with Nmap, a powerful network scanning tool.</div>  
+      </div>
+    </a>
+    <a href="https://tryhackme.com/room/tutorial" class="clear-link room-card-design-1" style="background: linear-gradient(rgba(22, 27, 37, 0.8), rgba(22, 27, 37, 0.8)), url(https://tryhackme.com/img/banners/default_tryhackme.png)">
+      <img class="room-card-design-img" src="./TryHackMe _ iRaccPro_files/c916cc3206c2199f9b5e9db43d5a15e9.png">
+      <div class="room-card-design-text">
+          <div class="room-card-design-title">Tutorial</div>
+          <div class="room-card-design-desc faded">Learn how to use a TryHackMe room to start your upskilling in cyber security.</div>  
+      </div>
+    </a>
+    <a href="https://tryhackme.com/room/introtoresearch" class="clear-link room-card-design-1" style="background: linear-gradient(rgba(22, 27, 37, 0.8), rgba(22, 27, 37, 0.8)), url(/img/banners/default_tryhackme.png)">
+      <img class="room-card-design-img" src="./TryHackMe _ iRaccPro_files/a3965d04160e266d168f5a0a9d4eb01a.png">
+      <div class="room-card-design-text">
+          <div class="room-card-design-title">Introductory Researching</div>
+          <div class="room-card-design-desc faded">A brief introduction to research skills for pentesting.</div>  
+      </div>
+    </a>
+    <a href="https://tryhackme.com/room/introtonetworking" class="clear-link room-card-design-1" style="background: linear-gradient(rgba(22, 27, 37, 0.8), rgba(22, 27, 37, 0.8)), url(https://i.imgur.com/QaCai7k.jpg)">
+      <img class="room-card-design-img" src="./TryHackMe _ iRaccPro_files/95164927092fe0fc3e9f142aea05267a.png">
+      <div class="room-card-design-text">
+          <div class="room-card-design-title">Introductory Networking</div>
+          <div class="room-card-design-desc faded">An introduction to networking theory and basic networking tools</div>  
+      </div>
+    </a>
+    <a href="https://tryhackme.com/room/vulnversity" class="clear-link room-card-design-1" style="background: linear-gradient(rgba(22, 27, 37, 0.8), rgba(22, 27, 37, 0.8)), url(https://i.imgur.com/JFYfwL8.png)">
+      <img class="room-card-design-img" src="./TryHackMe _ iRaccPro_files/85dee7ce633f5668b104d329da2769c3.png">
+      <div class="room-card-design-text">
+          <div class="room-card-design-title">Vulnversity</div>
+          <div class="room-card-design-desc faded">Learn about active recon, web app attacks and privilege escalation.</div>  
+      </div>
+    </a></div>
+<button type="button" onclick="completedRoomsAdd()" id="completed-rooms-more" class="mb-3 btn btn-outline-secondary btn-xs" style="display: inline-block;">Show More <i class="far fa-long-arrow-down"></i></button>
+</div>
+<div class="tab-pane fade" id="badges-achieved" role="tabpanel">
+<div id="badges"><div class="noselect badge-card badge-achieved">
+                      <div class="d-flex align-items-center">
+                        <img src="./TryHackMe _ iRaccPro_files/streak7.svg" class="badge-image">
+                        <div class="badge-card-info">
+                            <div class="size-18 bold">7 Day Streak</div>
+                            <p class="m-0 faded">Achieving a 7 day hacking streak</p>
+                        </div>
+                       </div>
+                    </div><div class="noselect badge-card badge-achieved">
+                      <div class="d-flex align-items-center">
+                        <img src="./TryHackMe _ iRaccPro_files/linux.svg" class="badge-image">
+                        <div class="badge-card-info">
+                            <div class="size-18 bold">cat linux.txt</div>
+                            <p class="m-0 faded">Being competent in Linux</p>
+                        </div>
+                       </div>
+                    </div><div class="noselect badge-card badge-achieved">
+                      <div class="d-flex align-items-center">
+                        <img src="./TryHackMe _ iRaccPro_files/owasptop10.svg" class="badge-image">
+                        <div class="badge-card-info">
+                            <div class="size-18 bold">OWASP Top 10</div>
+                            <p class="m-0 faded">Understanding every OWASP vulnerability</p>
+                        </div>
+                       </div>
+                    </div><div class="noselect badge-card badge-achieved">
+                      <div class="d-flex align-items-center">
+                        <img src="./TryHackMe _ iRaccPro_files/introtooffensivesecurity.svg" class="badge-image">
+                        <div class="badge-card-info">
+                            <div class="size-18 bold">Pentesting Principles</div>
+                            <p class="m-0 faded">Completing the 'Introduction to Pentesting' module</p>
+                        </div>
+                       </div>
+                    </div><div class="noselect badge-card badge-achieved">
+                      <div class="d-flex align-items-center">
+                        <img src="./TryHackMe _ iRaccPro_files/webbed.svg" class="badge-image">
+                        <div class="badge-card-info">
+                            <div class="size-18 bold">Webbed</div>
+                            <p class="m-0 faded">Understands how the world wide web works</p>
+                        </div>
+                       </div>
+                    </div><div class="noselect badge-card badge-achieved">
+                      <div class="d-flex align-items-center">
+                        <img src="./TryHackMe _ iRaccPro_files/ohsint.svg" class="badge-image">
+                        <div class="badge-card-info">
+                            <div class="size-18 bold">OhSINT</div>
+                            <p class="m-0 faded">Completing the OhSINT room</p>
+                        </div>
+                       </div>
+                    </div><div class="noselect badge-card badge-achieved">
+                      <div class="d-flex align-items-center">
+                        <img src="./TryHackMe _ iRaccPro_files/securityawareness.svg" class="badge-image">
+                        <div class="badge-card-info">
+                            <div class="size-18 bold">Security Awareness</div>
+                            <p class="m-0 faded">Completing the cyber security awareness module</p>
+                        </div>
+                       </div>
+                    </div><div class="noselect badge-card badge-achieved">
+                      <div class="d-flex align-items-center">
+                        <img src="./TryHackMe _ iRaccPro_files/introtosecurityengineering.svg" class="badge-image">
+                        <div class="badge-card-info">
+                            <div class="size-18 bold">Introduction to Security Engineering</div>
+                            <p class="m-0 faded">Completed the Security Engineer Intro room!</p>
+                        </div>
+                       </div>
+                    </div><div class="noselect badge-card badge-achieved">
+                      <div class="d-flex align-items-center">
+                        <img src="./TryHackMe _ iRaccPro_files/streak30.svg" class="badge-image">
+                        <div class="badge-card-info">
+                            <div class="size-18 bold">30 Day Streak</div>
+                            <p class="m-0 faded">Hacking for 30 days solid</p>
+                        </div>
+                       </div>
+                    </div></div>
+</div>
+<div class="tab-pane fade" id="created" role="tabpanel">
+<div class="row" id="created-rooms">
+<div class="mb-2 spinner-border hacker-green" role="status">
+<span class="sr-only">Loading...</span>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="yearly-activity" role="tabpanel">
+<div class="user-streak faded size-18">
+<span data-toggle="tooltip" title="" data-original-title="iRaccPro&#39;s current streak"><i class="fas fa-fire-alt hacker-green"></i> 22</span>
+</div>
+<span id="heatmap-user-events" class="activity-events faded size-18"></span>
+<h4 class="mb-3 text-center">Activity</h4>
+<div id="heatmap-user-activity" class="mb-3 text-center">
+<div class="mb-2 spinner-border hacker-green" role="status">
+<span class="sr-only">Loading...</span>
+</div>
+</div>
+<div class="text-center faded size-12">Activity events are measured by the number of machines started, questions answered or file downloads.</div>
+</div>
+<div class="text-center tab-pane fade" id="tickets" role="tabpanel">
+<div id="user-tickets">Loading...</div>
+<div class="mt-3 mb-0">This ticketing event has ended. This event allowed you to complete rooms and earn tickets, collect 3 of the same ticket to win prizes. For more information on the old ticket promotion, click <a href="https://tryhackme.com/room/tickets4">here</a>.</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade show" id="publicBadge" tabindex="-1" role="dialog" style="display: block; padding-right: 8px;" aria-modal="true">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-body text-center">
+<h5><i class="fad fa-id-badge text-success"></i> Your TryHackMe Badge</h5>
+<p class="mb-1 faded">Include the following script to the web page you want the badge on!</p>
+<code class="mb-2" id="thm_badge_script">&lt;script src="https://tryhackme.com/badge/1642749"&gt;&lt;/script&gt;</code><br>
+<script src="./TryHackMe _ iRaccPro_files/1642749"></script><div id="thm_badge" class="thm_margin" onclick="location.href=&#39;https://tryhackme.com/p/iRaccPro&#39;">
+  <div style="width: auto; border-radius: 4px; margin-right: 0px">
+    <div class="thm_avatar" style="background-image: url(https://secure.gravatar.com/avatar/8c3ef80f364b457377a01e4607dbd8cf.jpg?s=200&amp;d=robohash&amp;r=x)"></div>
+  </div>
+  <div style="
+      margin-left: 25px;
+      width: 220px;
+      height: 56px;
+      background-color: #343c42;
+      border-radius: 5px;
+      text-align: left;
+      background-image: url(https://assets.tryhackme.com/img/thm_logo_only.svg);
+      background-size: 23px 23px;
+      background-position: right 5px bottom 5px;
+      background-repeat: no-repeat;
+    ">
+    <style scoped="">
+      .thm_margin {
+        margin: 5px;
+      }
+
+      #thm_badge {
+        width: 210px;
+        display: inline-table;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      #thm_badge:hover {
+        cursor: pointer;
+      }
+
+      .thm_avatar {
+        display: block;
+        width: 50px;
+        height: 50px;
+        float: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 50%;
+        box-sizing: content-box; /* Needed for border to stop changing image width*/
+        border: 3px solid #88cc14;
+        background-color: #343c42;
+        box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+        box-shadow: 0 0px 3px 0px #303030;
+      }
+
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/ubuntumono/v6/ViZhet7Ak-LRXZMXzuAfkY4P5ICox8Kq3LLUNMylGO4.woff2)
+          format('woff2');
+      }
+
+      .thm_font {
+        font-family: 'Roboto', monospace;
+      }
+
+      .thm_nickname {
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: bold;
+        text-shadow: #000 0 0 6px;
+      }
+
+      .thm_stat {
+        color: #fff;
+        opacity: 0.5;
+        font-size: 14px;
+      }
+
+      .thm_icon {
+        opacity: 0.85;
+        height: 16px;
+      }
+
+      @keyframes flicker {
+        0%,
+        19.999%,
+        22%,
+        62.999%,
+        64%,
+        64.999%,
+        70%,
+        100% {
+          opacity: 0.99;
+          text-shadow: -1px -1px 0 $outline, 1px -1px 0 $outline, -1px 1px 0 $outline,
+            1px 1px 0 $outline, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444,
+            0 0 2px #ff7e00, 0 2px 3px #000;
+        }
+        20%,
+        21.999%,
+        63%,
+        63.999%,
+        65%,
+        69.999% {
+          opacity: 0.4;
+          text-shadow: none;
+        }
+      }
+
+      .thm_rank {
+        color: #ffffff;
+        font-size: 11px;
+      }
+
+      .thm_line {
+        line-height: 12px;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .thm_link {
+        color: #fff;
+        font-size: 0.6em;
+        text-decoration: none;
+        animation: flicker 6s infinite;
+      }
+
+      .thm_link:hover {
+        color: #fff;
+        font-size: 0.6em;
+        text-decoration: underline;
+      }
+
+      .thm_link:visited {
+        color: #fff;
+      }
+
+      .thm_mr {
+        margin-right: 8px;
+      }
+
+      .thm_for_img {
+        color: #fff;
+        opacity: 0.5;
+        font-size: 14px;
+        position: relative;
+        top: -3px;
+        margin-bottom: 5px;
+      }
+    </style>
+
+    <div class="thm_font" style="
+        box-sizing: content-box;
+        height: 50px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 8px;
+        padding-top: 5px;
+      ">
+      <p class="thm_line" style="margin-bottom: 3px">
+        <span class="thm_nickname">iRaccPro</span> <span class="thm_rank">[0x9][Omni]</span><br>
+      </p>
+      <p class="thm_line" style="margin-bottom: 1px; display: flex; align-items: center">
+        <img class="thm_icon thm_mr" src="./TryHackMe _ iRaccPro_files/trophy.png" alt="trophy">
+        <span class="thm_stat thm_mr">34851</span>
+        <img class="thm_icon thm_mr" src="./TryHackMe _ iRaccPro_files/door.png" alt="door">
+        <span class="thm_stat thm_mr">83</span>
+        <img class="thm_icon thm_mr" src="./TryHackMe _ iRaccPro_files/target.png" alt="target">
+        <span class="thm_stat">9</span><br>
+      </p>
+      <p class="thm_line">
+        <a href="https://www.tryhackme.com/" class="thm_link">tryhackme.com</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Javascript to get current URL and append to our server -->
+
+<p class="mt-4 mb-1 faded">You can also include a static image of the badge.</p>
+<code class="mb-2">&lt;img src="https://tryhackme-badges.s3.amazonaws.com/iRaccPro.png" alt="TryHackMe"&gt;</code><br>
+<img src="./TryHackMe _ iRaccPro_files/iRaccPro.png"><br>
+<a href="https://tryhackme.com/badge/regen/1642749">
+<button type="button" class="btn btn-sm btn-outline-info mt-2"><i class="fad fa-retweet-alt"></i> Regenerate Badge Image</button>
+</a>
+</div>
+<div class="modal-footer">
+<div style="float:left; width: 100%; opacity: 0.7;">
+<img style="height: 16px" src="./TryHackMe _ iRaccPro_files/trophy.png"> <span class="mr-1">= Rank</span>
+<img style="height: 16px" src="./TryHackMe _ iRaccPro_files/door.png"> <span class="mr-1">= Rooms Completed</span>
+<img style="height: 16px" src="./TryHackMe _ iRaccPro_files/target.png"> <span class="mr-1">= Badges Earned</span>
+</div>
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="shareBadges" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-header modal-dark-blue">
+<h5 class="modal-title m-auto">Share your badge achievements</h5>
+</div>
+<div class="modal-body text-center">
+<div class="input-group w-50 mx-auto">
+<select class="custom-select" onchange="generateAchievementBadgeLink()" id="generateLink"></select>
+</div>
+<div id="sharing-badges"></div>
+</div>
+</div>
+</div>
+</div>
+<script src="./TryHackMe _ iRaccPro_files/countryCodeToName.js.download"></script>
+<script src="./TryHackMe _ iRaccPro_files/api-requests.js.download"></script>
+<script src="./TryHackMe _ iRaccPro_files/notify.js.download"></script>
+<script src="./TryHackMe _ iRaccPro_files/tickets.js.download"></script>
+<script>
+      const badgeCDN = "https://assets.tryhackme.com/room-badges"
+      const profileUsername = "iRaccPro"
+      const profileAvatar = "https://secure.gravatar.com/avatar/8c3ef80f364b457377a01e4607dbd8cf.jpg?s=200&amp;d=robohash&amp;r=x"
+
+      $(document).ready(async function() {
+        populateBadges()
+        populateUserRank()
+        initCompletedRooms()
+        getAverageColourAsRGB(profileAvatar + '?somethingToRefreshCORSCache')
+      })
+
+    </script>
+<script src="./TryHackMe _ iRaccPro_files/events.js.download"></script>
+<script src="./TryHackMe _ iRaccPro_files/user_profile.js.download"></script>
+<iframe id="intercom-frame" style="position: absolute !important; opacity: 0 !important; width: 1px !important; height: 1px !important; top: 0 !important; left: 0 !important; border: none !important; display: block !important; z-index: -1 !important; pointer-events: none;" aria-hidden="true" tabindex="-1" title="Intercom" src="./TryHackMe _ iRaccPro_files/saved_resource.html"></iframe><div class="intercom-lightweight-app"><div class="intercom-lightweight-app-launcher intercom-launcher" role="button" tabindex="0" aria-label="Open Intercom Messenger" aria-live="polite"><div class="intercom-lightweight-app-launcher-icon intercom-lightweight-app-launcher-icon-open"><img src="./TryHackMe _ iRaccPro_files/9e0f012f15b6fc981dde2f1f5198d728.png" alt="" class="intercom-lightweight-app-launcher-custom-icon-open"></div><div class="intercom-lightweight-app-launcher-icon intercom-lightweight-app-launcher-icon-minimize"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M18.601 8.39897C18.269 8.06702 17.7309 8.06702 17.3989 8.39897L12 13.7979L6.60099 8.39897C6.26904 8.06702 5.73086 8.06702 5.39891 8.39897C5.06696 8.73091 5.06696 9.2691 5.39891 9.60105L11.3989 15.601C11.7309 15.933 12.269 15.933 12.601 15.601L18.601 9.60105C18.9329 9.2691 18.9329 8.73091 18.601 8.39897Z" fill="white"></path>
+</svg>
+</div></div><style id="intercom-lightweight-app-style" type="text/css">
+  @keyframes intercom-lightweight-app-launcher {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes intercom-lightweight-app-gradient {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes intercom-lightweight-app-messenger {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    40% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .intercom-lightweight-app {
+    position: fixed;
+    z-index: 2147483001;
+    width: 0;
+    height: 0;
+    font-family: intercom-font, "Helvetica Neue", "Apple Color Emoji", Helvetica, Arial, sans-serif;
+  }
+
+  .intercom-lightweight-app-gradient {
+    position: fixed;
+    z-index: 2147483002;
+    width: 500px;
+    height: 500px;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    background: radial-gradient(
+      ellipse at bottom right,
+      rgba(29, 39, 54, 0.16) 0%,
+      rgba(29, 39, 54, 0) 72%);
+    animation: intercom-lightweight-app-gradient 200ms ease-out;
+  }
+
+  .intercom-lightweight-app-launcher {
+    position: fixed;
+    z-index: 2147483003;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none;
+    bottom: 20px;
+    right: 20px;
+    max-width: 48px;
+    width: 48px;
+    max-height: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #1C2538;
+    cursor: pointer;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 32px 0 rgba(0, 0, 0, 0.16);
+    transition: transform 167ms cubic-bezier(0.33, 0.00, 0.00, 1.00);
+    box-sizing: content-box;
+  }
+
+
+  .intercom-lightweight-app-launcher:hover {
+    transition: transform 250ms cubic-bezier(0.33, 0.00, 0.00, 1.00);
+    transform: scale(1.1)
+  }
+
+  .intercom-lightweight-app-launcher:active {
+    transform: scale(0.85);
+    transition: transform 134ms cubic-bezier(0.45, 0, 0.2, 1);
+  }
+
+
+  .intercom-lightweight-app-launcher:focus {
+    outline: none;
+
+    
+  }
+
+  .intercom-lightweight-app-launcher-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    transition: transform 100ms linear, opacity 80ms linear;
+  }
+
+  .intercom-lightweight-app-launcher-icon-open {
+    
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-open svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .intercom-lightweight-app-launcher-icon-open svg path {
+    fill: rgb(255, 255, 255);
+  }
+
+  .intercom-lightweight-app-launcher-icon-self-serve {
+    
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-self-serve svg {
+    height: 44px;
+  }
+
+  .intercom-lightweight-app-launcher-icon-self-serve svg path {
+    fill: rgb(255, 255, 255);
+  }
+
+  .intercom-lightweight-app-launcher-custom-icon-open {
+    max-height: 24px;
+    max-width: 24px;
+
+    
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-minimize {
+    
+        opacity: 0;
+        transform: rotate(-60deg) scale(0);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-minimize svg path {
+    fill: rgb(255, 255, 255);
+  }
+
+  .intercom-lightweight-app-messenger {
+    position: fixed;
+    z-index: 2147483003;
+    overflow: hidden;
+    background-color: white;
+    animation: intercom-lightweight-app-messenger 250ms cubic-bezier(0, 1, 1, 1);
+    transform-origin: bottom right;
+
+    
+        width: 400px;
+        height: calc(100% - 104px);
+        max-height: 704px;
+        min-height: 250px;
+        right: 20px;
+        bottom: 84px;
+        box-shadow: 0 5px 40px rgba(0,0,0,0.16);
+      
+
+    border-radius: 16px;
+  }
+
+  .intercom-lightweight-app-messenger-header {
+    height: 64px;
+    border-bottom: none;
+    background: #1c2538
+
+    
+  }
+
+  .intercom-lightweight-app-messenger-footer{
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+    
+  }
+
+  @media print {
+    .intercom-lightweight-app {
+      display: none;
+    }
+  }
+</style></div><div class="modal-backdrop fade show"></div></body></html>
