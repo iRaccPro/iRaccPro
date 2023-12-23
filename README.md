@@ -2,7 +2,7 @@
 
 I am Zach. I am a student at Purdue University studying computer science, specifically systems and security. My interests primarily focus on cybersecurity, particularly red team operations within industrial control systems and low level systems
 
-[![zachs's tryhackme stats](https://raw.githubusercontent.com/ZacharyKirkeby/ZacharyKirkeby/main/assets/thm_propic.png)][tryhackme]
+![tryhackme stats](https://raw.githubusercontent.com/ZacharyKirkeby/ZacharyKirkeby/master/assets/thm_propic.png)
 ![Zachs's hackthebox stats](http://www.hackthebox.eu/badge/image/1401235)
 
 
