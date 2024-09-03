@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-I am Zach. I am a student at Purdue University studying computer science, specifically systems and security. My interests primarily focus on cybersecurity, particularly red team operations within industrial control systems and low level systems
+I'm Zach, I am a computer science student at Purdue University, with a specialization in systems and security. I'm an aspiring security researcher and software engineer. My interests primarily focus on cybersecurity, particularly red team operations within industrial control systems and low level systems. I mostly design tools for examining and modeling vulnerabilities and system behaviors, but I also have plenty of scripts from my side projects and from competitions. 
 
 <img src="https://tryhackme-badges.s3.amazonaws.com/iRaccPro.png" alt="TryHackMe">
 
