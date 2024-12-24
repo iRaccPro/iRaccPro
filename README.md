@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-I'm Zach, I am a computer science student at Purdue University, with a specialization in systems and security. I'm an aspiring security researcher and software engineer. My interests primarily focus on cybersecurity, particularly red team operations within industrial control systems and low level systems. I mostly design tools for examining and modeling vulnerabilities and system behaviors, but I also have plenty of scripts from my side projects and from competitions. 
+I'm Zach, I am a computer science student at Purdue University, with a specialization in systems and security. I'm an aspiring security researcher and embedded software engineer. My interests primarily focus on cybersecurity, particularly red team operations within industrial control systems and low level systems. I mostly design tools for examining and modeling vulnerabilities and system behaviors, but I also have plenty of scripts from my side projects and from competitions. 
 
 <img src="https://tryhackme-badges.s3.amazonaws.com/iRaccPro.png" alt="TryHackMe">
 
@@ -36,14 +36,3 @@ I'm Zach, I am a computer science student at Purdue University, with a specializ
 [![iRacc's GitHub stats](https://github-readme-stats.vercel.app/api?username=ZacharyKirkeby&show_icons=true&theme=nightowl&count_private=true)]
 
 [![Top Langs](https://github-readme-stats-j5r9dc9kn-iraccpro.vercel.app/api/top-langs/?username=ZacharyKirkeby&layout=donut&&show_icons=true&theme=nightowl&exclude_repo=github-readme-stats&langs_count=12)](https://github.com/ZacharyKirkeby/github-readme-stats)
-
-
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="github-snake.svg" />
-  <img alt="github-snake" src="github-snake.svg" />
-</picture>
-
-![Snake animation](https://github.com/iRaccPro/iRaccPro/blob/output/github-contribution-grid-snake.svg)
-
